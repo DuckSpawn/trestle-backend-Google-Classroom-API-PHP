@@ -1,0 +1,9 @@
+/vendor/
+composer.json
+composer.lock
+client_secret.json
+credentials.json
+logout.php
+quickstart.php
+samp.php
+sampconfig.php

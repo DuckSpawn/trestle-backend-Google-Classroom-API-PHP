@@ -39,3 +39,8 @@
 
 ## Remember:
 - Run the program with xampp/wampp started
+
+## References:
+- https://github.com/googleapis/google-api-php-client/blob/master/docs/oauth-web.md
+- https://developers.google.com/classroom/quickstart/php
+- https://developers.google.com/resources/api-libraries/documentation/classroom/v1/php/latest/

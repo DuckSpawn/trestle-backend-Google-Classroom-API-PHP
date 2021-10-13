@@ -26,7 +26,7 @@
 </head>
 <body>
     <?php
-        if($login_button == ''){
+        if(isset($_SESSION['access_token'])){
             echo '<br><a href="revoke.php">revoke access</a><br>';
 
             $client->setAccessToken($_SESSION['access_token']);
@@ -56,6 +56,7 @@
 
                                 echo '<br><b>Will only get UNFINISHED course works of ' . $course->getName() . '</b><br>';
                                 echo $courseWork->getTitle() . ' | Due date: ' . $monthName . '-' . $day . '-' . $year . '<br>';
+                                echo 'Link: ' . $courseWork->getAlternateLink();
                             }
                         }
                     }

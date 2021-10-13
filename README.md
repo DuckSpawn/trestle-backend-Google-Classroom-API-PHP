@@ -1,6 +1,6 @@
 # trestle-backend
 ## Code Output
-![alt text](https://github.com/GentleHome/trestle-backend/blob/master/output.JPG?raw=true)
+![alt text](https://github.com/GentleHome/trestle-backend-Google-Classroom-API-PHP/blob/master/output.JPG)
 ## Prerequisites 
 ### 1. Create a project on Google Console
 - Go to https://console.cloud.google.com

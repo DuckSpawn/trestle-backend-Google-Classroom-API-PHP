@@ -2,3 +2,4 @@
 composer.json
 composer.lock
 client_secret.json
+.prettierrc

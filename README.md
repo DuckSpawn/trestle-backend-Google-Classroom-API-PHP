@@ -35,9 +35,6 @@
 - Under the User type choose MAKE EXTERNAL
 - Choose testing and confirm
 - On Test users add the emails you will use for testing your app.
-### Why cant i get/access the data from objects but i can see it when i var_dump()?
-- The email you're trying to access the data from is managed by an organization and restricted the data access see https://support.google.com/edu/classroom/answer/6250906?hl=en
-- Organizations do this to protect their materials.
 
 ## Remember:
 - Run the program with xampp/wampp started

@@ -12,18 +12,23 @@ const xhttp = new XMLHttpRequest();
 getAuthURL();
 
 if(code != null){
-    grantAccess.classList.add('hide-grant-acess');
     data.innerHTML = 'Waiting for data to load...';
     getCollection();
-}else{
-    console.log('no access code');
 }
 
 // puts the created auth url in the href
 function getAuthURL(){
     xhttp.onload = function(){
         if (this.readyState == 4 && this.status == 200) {
-            grantAccess.setAttribute('href', this.responseText);
+            try{
+                collection = JSON.parse(this.response);
+                data.innerHTML = arrangingData(collection);
+            }catch{
+                grantAccess.innerHTML = 'Grant Access';
+                data.innerHTML = '';
+                grantAccess.setAttribute('href', this.responseText);
+            }
+            
         }
     }
     xhttp.open("GET", "api.php", true);
@@ -43,6 +48,7 @@ function getCollection(){
 }
 
 function arrangingData(collection){
+    grantAccess.classList.add('hide-grant-acess');
     let html = 'Data loaded &#10004;<br>';
         collection.forEach(element => {
             let dueDate = element.dueDate;
